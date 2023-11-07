@@ -2,7 +2,7 @@ langchain
 streamlit
 faiss-cpu
 tiktoken
-pyPDF2
+PyPDF2
 python-dotenv
 streamlit-extras
 sentence-transformers
