@@ -1,11 +1,10 @@
 import streamlit as st
-from PyPDF2 import PdfReader
 from langchain.llms import GooglePalm
 from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-
+from PyPDF2 import PdfReader
 
 def main():
     st.header("PDF reader")
