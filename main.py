@@ -32,7 +32,7 @@ def main():
         query = st.text_input("ask any question to the pdf")
         if query:
             docs = docsearch.similarity_search(query=query, k=1)
-            llm = GooglePalm(google_api_key=st.secrets("google_api_key"), temperature=0.1)
+            llm = GooglePalm(google_api_key=st.secrets["google_api_key"], temperature=0.1)
             chain = load_qa_chain(llm=llm, chain_type='stuff')
             response = chain.run(input_documents=docs, question=query)
             st.write(response)
