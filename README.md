@@ -1,7 +1,7 @@
-# Chat_with_PDF_LangChain
+# Chat with PDF LangChain
 
 Given a PDF file,
-you ask and retrieve and info from the model
+you ask and retrieve info from the PDF using a LLM model
 
 
-made with LangChain, Streamlit
+made with Python, LangChain, Streamlit, Google Palm model
